@@ -35,6 +35,7 @@ when this code gets compiled and ran, it will output "Hello World" in the termin
 
 #### Taking an input from the terminal
 To take an input from the terminal you need to use the Scanner library and make a new scanner. 
+###### Taking text as an input
 
 ``` java 
 import java.util.Scanner;
@@ -80,3 +81,80 @@ public class Input{
 }
 ```
 This code would output the entered names into the terminal. I.E Brandon Loughrey. 
+
+###### Taking integers as an input
+
+when taking an integer as a function, use the nextInt() method. 
+``` java 
+import java.util.Scanner
+
+public class age{
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter your age");
+		int age = input.nextInt();
+		input.nextLine();
+		
+		System.out.println("you are " + age + " years old");
+	}
+}
+```
+
+When using the nextInt() method, it is important that it is followed by the nextLine() method to get the end of the line, to ensure that the remaining code can be ran. 
+
+#### Parsing
+When changing the data type of a piece of data you need to parse the data,  this is done using the DataType.ParseDatatype method. 
+
+```java 
+public class Parsing{
+	public static void main(String[] args){
+		String number = "1234"; 
+		
+		int numberInt = Integer.parseInt(number); 
+		double numberDouble = Double.parseDouble(number);
+		
+		System.out.println(numberInt);
+		System.out.println(numberDouble);
+	}
+}
+```
+
+In this example, the integer parsed version printed is 1234, and the double parsed version printed is 1234.0. 
+
+#### Operations
+In java you can do arithmetic operations, add, subtract , multiply, quotient, modulo.
+``` java 
+public class Arithmetic{
+	public static void main (String[] args){
+		int a = 10;
+		int b = 3;
+		
+		// addition 
+		System.out.println(a + b);
+		
+		// subtraction
+		System.out.println(a - b);
+		
+		// multiplication
+		System.out.println(a * b);
+		
+		// quotient
+		System.out.println(a / b);
+		
+		// modulo
+		System.out.println(a % b);		
+
+		
+	}
+}
+```
+
+addition, subtraction and multiplication work as expected. 
+
+Quotient truncates the value when integers are used. 
+
+modulo outputs the remainder of the division
+
+#### Working with time
+
