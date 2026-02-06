@@ -30,4 +30,25 @@ each node takes 8 bytes of memory
 
 
 ![[Pasted image 20260205174720.png]]
-lookup in a linked list 
+lookup in a linked list - takes O(n) time complexity
+
+
+Comparison - see slides
+
+![[Pasted image 20260206121141.png]]
+
+Doubly linked lists
+store a pointer to the end of the linked list, have backwards pointers too. 
+
+circular linked lists
+doubly
+make the last node point to the first
+make the first node point to the last
+
+singly 
+make the last node point to the first
+![[Pasted image 20260206122204.png]]
+
+More comparisons
+![[Pasted image 20260206122330.png]]
+
